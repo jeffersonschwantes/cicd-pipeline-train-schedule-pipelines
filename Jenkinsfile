@@ -1,6 +1,6 @@
 node {
    stage('Build') {
-      sh "./gradew build"
+      sh "./gradlew build"
    }
    stage('Archive') {
       archive 'dist/trainSchedule.zip'
